@@ -1,0 +1,101 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.card-text{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold
+}
+
+.col-lg-6 {
+  margin-bottom: 30px;
+}
+ 
+.row { 
+  display: flex; 
+  flex-flow: row wrap; 
+}
+
+.card-img-top {
+  opacity: 1.0; 
+}
+.card-img-top:hover {
+  opacity: 0.6;
+}
+
+.box {
+   flex: 1;
+ }
+ 
+.wrapper {
+  text-align: center;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+@media (min-width:34em) {
+  .card-deck > .card
+  {
+      width: 29%;
+      flex-wrap: wrap;
+      flex: initial; 
+  }
+}
+
+@media (min-width: 769px) {
+	.row {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1025px) {
+	.row {
+		width: 100%;
+		max-width: 1150px;
+	}
+}
+
+
+
+
