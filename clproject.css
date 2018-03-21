@@ -21,6 +21,14 @@
   max-width: 40rem;
 }
 
+#author {
+  font-size: 18px;
+}
+
+#quote {
+  font-style: italic;
+}
+
 .card-text{
   text-align: center;
   font-size: 24px;
@@ -47,6 +55,12 @@
    flex: 1;
  }
  
+.bg {  
+  width: 100%;
+  z-index: 0;
+}
+
+
  .btn-outline-secondary{
  color:#045;
  font-weight: bold;
@@ -109,7 +123,6 @@ footer p {
 		max-width: 1150px;
 	}
 }
-
 
 @media screen and(max-width:760px){
 	#quoteButton,#addNew{
