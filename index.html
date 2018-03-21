@@ -8,15 +8,21 @@
     
     <title>MA Code Louisville 2018 Project</title>
 
- <!-- Bootstrap core CSS -->
+<!-- Bootstrap core CSS -->
    
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
- <!-- Custom CSS styles -->
+   <script src="https://code.jquery.com/jquery-1.11.2.min.js" integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA=" crossorigin="anonymous"></script>
+
+<!-- Custom CSS styles -->
    <link href="clproject.css" rel="stylesheet">
+
+<!-- Custom Java Script -->   
+
+
+
   </head>
 
   <body>
@@ -69,13 +75,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="img/red.png" alt="First slide">
+            <img class="d-block w-100" src="img/red.png" alt="red mountain">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/wwrafting.jpg" alt="Second slide">
+            <img class="d-block w-100" src="img/wwrafting.jpg" alt="whitewater rafting">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/snow.png" alt="Third slide">
+            <img class="d-block w-100" src="img/snow.png" alt="snow mountain">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -88,18 +94,25 @@
         </a>
       </div>
 
- <!--  Jumbotron Section -->  
+ <!--  Jumbotron Section -->
+
+
 
       <section class="jumbotron text-center">
           <div class="container">
-            <h1 class="jumbotron-heading">“Not all those who wander are lost.”</h1>
-            <p class="lead text-muted" "text-right">-J.R.R. Tolkien</p>
-            <p>
+            <h1 class="jumbotron-heading">Welcome!</h1>
+          </div>
+          <div class="quotewrap">
+            <p id="quote" class="h2">Life shrinks or expands in proportion to one’s courage.</p>
+            <p id="author">--Anais Nin</p>
+          </div>
+            <p class="lead text-muted" "text-right"></p>
               <a href="#album" class="btn btn-primary my-2">View Pictures</a>
-              <a href="#album" class="btn btn-secondary my-2">Read Stories</a>
-            </p>
+              <button id="newQuote" class="btn btn-quote btn-secondary my-2">New Quote</a>
+            </div>
           </div>
       </section>
+
 
 <!--  Photo Card Section -->
 
@@ -110,7 +123,7 @@
               <div class="col-lg-6">
                 <div class="card mb-6 box-shadow">
                    <img class="card-img-top" src=img/vfalls.jpg height="500" id="album" alt="landscapes">
-                    <div class="card-body">
+                    <div class="card-body"><a href="https://imgur.com/a/Jg69N" target="_blank"></a>
                        <p class="card-text">LANDSCAPES</p>
                       <div class="card-btn" style="text-align: center;">
                         <div class="btn">                  
@@ -119,8 +132,8 @@
                       </div>
                     </div>
                 </div>
-              </div>
-                        
+              </div>  
+                    
              <div class="col-lg-6">
                 <div class="card mb-6 box-shadow">
                   <img class="card-img-top" src=img/zebra.jpg height="500" alt="animals">
@@ -169,6 +182,7 @@
     
   
     </main>
+
 <!--  About Section -->
 
 <div class="container">
@@ -220,5 +234,6 @@
     <script src="../../../../assets/js/vendor/popper.min.js"></script>
     <script src="../../../../dist/js/bootstrap.min.js"></script>
     <script src="../../../../assets/js/vendor/holder.min.js"></script>
+    <script src="clproject.js"></script>
   </body>
 </html>
