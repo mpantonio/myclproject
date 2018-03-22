@@ -56,10 +56,14 @@
  }
  
 .bg {  
+  margin-top: 25px;
   width: 100%;
   z-index: 0;
 }
 
+h2 {
+    margin-top: 25px;
+}
 
  .btn-outline-secondary{
  color:#045;
@@ -86,8 +90,6 @@ footer p {
 }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-
-
 
 
 
