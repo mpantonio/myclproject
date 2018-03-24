@@ -1,31 +1,36 @@
-//begin Java Script for Quote Generator
+//begin JavaScript for Quote Generator
 
     $(document).ready(function(){
     
         var el = document.getElementById("quotes");
         
         var quotes = [
-        ["Travel makes one modest. You see what a tiny place you occupy in the world.", "Gustav Flaubert"],
-	    ["The gladdest moment in human life, me thinks, is a departure into unknown lands.", "Sir Richard Burton"],	
-	    ["Traveling – it leaves you speechless, then turns you into a storyteller.", "Ibn Battuta"],
-	    ["Like all great travelers, I have seen more than I remember, and remember more than I have seen.", "Benjamin Disraeli"],	
-	    ["Take only memories, leave only footprints.", "Chief Seattle"], 
-        ["A great way to learn about your country is to leave it.", "Henry Rollins"], 	
-	    ["Travel is never a matter of money but of courage.", "Paolo Coelho"], 	
-        ["Travel far enough, you meet yourself.", "David Mitchell"], 
-	    ["Life is either a daring adventure or nothing at all.", "Helen Keller"]  	
+      ["Travel makes one modest. You see what a tiny place you occupy in the world.", "--Gustav Flaubert"],
+	    ["The gladdest moment in human life, me thinks, is a departure into unknown lands.", "--Sir Richard Burton"],	
+	    ["Traveling – it leaves you speechless, then turns you into a storyteller.", "--Ibn Battuta"],
+	    ["Like all great travelers, I have seen more than I remember, and remember more than I have seen.", "--Benjamin Disraeli"],	
+	    ["Take only memories, leave only footprints.", "--Chief Seattle"], 
+      ["A great way to learn about your country is to leave it.", "--Henry Rollins"], 	
+	    ["Travel is never a matter of money but of courage.", "--Paolo Coelho"], 	
+      ["Travel far enough, you meet yourself.", "--David Mitchell"], 
+      ["Life is either a daring adventure or nothing at all.", "--Helen Keller"],
+      ["Life shrinks or expands in proportion to one’s courage.", "--Anais Nin"], 
+
     ];
-    
+
+//define the containers to target
 var lastNum;
 var randomNum;
-var thisQuote = "Life shrinks or expands in proportion to one’s courage.";
-var thisAuthor = "Anais Nin";
+var thisQuote = "Not all those who wander are lost.";
+var thisAuthor = "J.R.R. Tolkien";
 
+//getting a new random number to attach to a quote
 var randomNumberFinder = function() {
   randomNum = Math.floor((Math.random()*quotes.length)+1);
   return randomNum;
 };
 
+//set a new quote
 $(document).ready(function() {
   $("#newQuote").click(function() {
     randomNum = randomNumberFinder();
@@ -52,9 +57,6 @@ $(document).ready(function() {
         thisAuthor = quotes[lastNum][1];
         }
       }
-    });
-    $(".btn").hover(function() {
-      $(this).toggleClass('buttonhover');
-    });
-   
+    });//end newQuote function
+
   })})
