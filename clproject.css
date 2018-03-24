@@ -65,7 +65,7 @@ h2 {
     margin-top: 25px;
 }
 
- .btn-outline-secondary{
+.btn-outline-secondary{
  color:#045;
  font-weight: bold;
  }
@@ -74,7 +74,6 @@ h2 {
  cursor:pointer;
  color: #fff;	
 }
-
 
 .wrapper {
   text-align: center;
@@ -90,7 +89,6 @@ footer p {
 }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-
 
 
 /* ================================= 
